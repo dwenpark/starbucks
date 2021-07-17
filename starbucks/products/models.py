@@ -25,6 +25,7 @@ class Nutrition(models.Model):
 	caffeine_mg = models.DecimalField(max_digits=6, decimal_places=2)
 	size_ml = models.CharField(max_length=45)
 	size_fluid_ounce = models.CharField(max_length=45)
+	#size_ml, size_fluid_ounce는 int로 사용?
 
 	class Meta:
 		db_table = "nutritions"
